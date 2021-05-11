@@ -1,0 +1,6 @@
+name, ImageNet100 Error, ImageNet100-R Error, ImageNet100-C Error
+std_resnet50, 0.058, 0.574, 0.386
+deep_resnet50, 0.058, 0.508, 0.249
+amda_resnet50, 0.062, 0.449, 0.206
+augmix_resnet50, 0.055, 0.523, 0.29
+swsl_resnet50, 0.038, 0.259, 0.256
