@@ -8,6 +8,13 @@ IMGC_TAG = "ImageNet100-C Error"
 IMG_TAG = "ImageNet100 Error"
 
 
+def to_percentage(df):
+    for column in df.columns:
+        if not "Error" in column:
+            continue
+        df[column] = df[column] * 100  
+
+
 def find_folders(*paths):
     exp_paths = []
     for path in paths:
@@ -17,17 +24,17 @@ def find_folders(*paths):
 
 def teacher_name(conf):
     if conf.teacher.name == "swsl_resnet50":
-        return conf.teacher.name
+        return "Swsl Resnet50"
     elif conf.teacher.name == "resnet50":
         path = conf.teacher.ckpt_path
         if path is None:
-            return "std_resnet50"
+            return "Std. Resnet50"
         elif "augmix" in path and "deepaugment" in path:
-            return "amda_resnet50"
+            return "Amda Resnet50"
         elif "augmix" in path:
-            return "augmix_resnet50"
+            return "Augmix Resnet50"
         elif "deepaugment" in path:
-            return "deep_resnet50"
+            return "Deep. Resnet50"
     return "custom"
     raise NotImplementedError
 
@@ -87,6 +94,6 @@ def build_df(path):
 
 
 def collect(*paths):
-    exp_folders = find_folders(*paths)
+    exp_folders = set(find_folders(*paths))
     df = pd.concat(filter(lambda d: d is not None, [build_df(p) for p in exp_folders]), sort=True)
     return df
