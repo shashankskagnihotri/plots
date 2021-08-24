@@ -1,0 +1,5 @@
+submitit INFO (2021-08-10 12:33:48,543) - Starting with JobEnvironment(job_id=8741391_5, hostname=dlcgpu27, local_rank=0(1), node=0(1), global_rank=0(1))
+submitit INFO (2021-08-10 12:33:48,543) - Loading pickle: /work/dlclarge2/agnihotr-shashank-pruneshift/hoffmaja-pruneshift/pruneshift_jupyter/kd_analysis/dataframes/submitit_runs/8741391_5_submitted.pkl
+Create datamodule.
+0it [00:00, ?it/s]
+submitit INFO (2021-08-10 12:34:10,617) - Job completed successfully

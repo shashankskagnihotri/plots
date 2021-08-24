@@ -1,0 +1,8 @@
+,Amda,Augmix,DeepAugment,Epochs,ImageNet100 Error,ImageNet100-C Error,ImageNet100-R Error,Loss,Network,Path,Scaling,Teacher
+90,True,True,True,30,0.1308000087738037,0.303920030593872,0.5598810017108917,StandardLoss,mnasnet1_0,/work/dlclarge2/hoffmaja-pruneshift/experiments/img100/workshop/baselines/1times_amda/1,1,
+90,True,True,True,30,0.12980002164840698,0.2801280617713928,0.5356311500072479,StandardLoss,resnet18,/work/dlclarge2/hoffmaja-pruneshift/experiments/img100/workshop/baselines/1times_amda/0,1,
+90,True,True,True,30,0.131600022315979,0.304213285446167,0.5635023415088654,StandardLoss,mobilenet_v2,/work/dlclarge2/hoffmaja-pruneshift/experiments/img100/workshop/baselines/1times_amda/mobilenet/0,1,
+90,True,True,True,30,0.11360001564025879,0.292847990989685,0.53155717253685,KnowledgeDistill,mnasnet1_0,/work/dlclarge2/hoffmaja-pruneshift/experiments/img100/workshop/amda_distillation/1,1,AMDA Resnet50
+90,True,True,True,30,0.10559999942779541,0.2600213289260864,0.5001293420791626,KnowledgeDistill,resnet18,/work/dlclarge2/hoffmaja-pruneshift/experiments/img100/kd/kd_amda/4,1,AMDA Resnet50
+0,True,True,True,30,,,,KnowledgeDistill,mobilenet_v2,/work/dlclarge2/hoffmaja-pruneshift/experiments/img100/workshop/amda_distillation/mobilenet_v2/0,1,AMDA Resnet50
+3,True,True,True,30,,,,KnowledgeDistill,resnet18,/work/dlclarge2/hoffmaja-pruneshift/experiments/img100/workshop/amda_distillation/0,1,AMDA Resnet50

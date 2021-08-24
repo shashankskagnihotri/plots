@@ -1,0 +1,2 @@
+,Amda,Augmix,DeepAugment,Epochs,ImageNet100 Error,ImageNet100-C Error,ImageNet100-R Error,LearningRate,Loss,Network,Path,Scaling,WeightDecay,kd_T,kd_mixture
+90,True,True,True,30,12.980002164840698,28.012806177139282,53.56311500072479,0.1,StandardLoss,resnet18,/work/dlclarge2/hoffmaja-pruneshift/experiments/img100/workshop/baselines/1times_amda/0,1,0.0002,,

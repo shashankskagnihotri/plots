@@ -1,0 +1,3 @@
+,Amda,Augmix,Batch Size,Cifar100 Error,Cifar100-C Error,DeepAugment,Epochs,LearningRate,Loss,Network,Path,Scaling,SupCon Loss,Supcon Amda,Teacher,Temperature,WeightDecay,kd_T,kd_mixture
+300,False,False,2048.0,24.08999800682068,47.49273657798767,False,100,0.1,StandardLoss,resnet18,/work/dlclarge2/agnihotr-shashank-pruneshift/final_cifar100/supcon/augmix/classification_std,1,SupCon,False,,0.07,0.0002,,
+300,False,False,2048.0,24.09999966621399,48.89463186264038,False,100,0.1,StandardLoss,resnet18,/work/dlclarge2/agnihotr-shashank-pruneshift/final_cifar100/supcon/kd_augmix/classification_std,1,KD_SupCon,False,,0.07,0.0002,,
