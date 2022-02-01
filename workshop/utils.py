@@ -30,7 +30,9 @@ def calculate_info(row):
     if not path.exists():
         print(f"Did not find {path}.")
         return -1, -1
-    net = create_network("imagenet", row["Network"], 100, ckpt_path=path, scaling_factor=row["Scaling"])#imagenet
+    net = create_network("imagenet", row["Network"], 100, 
+                         ckpt_path=path, 
+                         scaling_factor=row["Scaling"])#imagenet
     size = PruneInfo(net).network_size()
     macs, _ = get_model_complexity_prune(net, input_res=(3, 224, 224))
     # print(macs)
@@ -45,18 +47,33 @@ def add_info(df, num_workers=8):
     return df
 
 def teacher_name(conf):
+    #print(conf.teacher.ckpt_path)
     if conf.teacher.name == "swsl_resnet50":
-        return "SWSL ResNet50"
+        return "SWSL ResNet50"    
     elif conf.teacher.name == "resnet50":
         path = conf.teacher.ckpt_path
         if path is None:
             return "STD ResNet50"
+        elif "img100/amda_resnet50" in path:
+            return "Img100-AMDA_ResNet50"
         elif "augmix" in path and "deepaugment" in path:
             return "AMDA ResNet50"
         elif "augmix" in path:
             return "AM ResNet50"
         elif "deepaugment" in path:
             return "DA ResNet50"
+    elif conf.teacher.ckpt_path is None:
+        return "STD_"+conf.teacher.name
+    elif "deepaugment" in conf.teacher.ckpt_path:
+            return "AMDA_"+conf.teacher.name
+    elif 'img100/amda' in conf.teacher.ckpt_path:
+        return "Img100-AMDA_"+conf.teacher.name
+    elif 'resnet34/standard' in conf.teacher.ckpt_path:
+        return "Img100-STD_"+conf.teacher.name
+    elif 'resnet34/amda' in conf.teacher.ckpt_path:
+        return "Img100-AMDA_"+conf.teacher.name
+    
+    return conf.teacher.name
     return "custom"
     raise NotImplementedError
 
@@ -75,7 +92,11 @@ def prune_method(conf):
     return "Not Listed!"
 
 def loss_name(conf):
-    loss_name = conf.loss._target_.split(".")[-1]
+    try:
+        loss_name = conf.loss._target_.split(".")[-1]
+    except:
+        loss_name=None
+    
     # Rename old loss.
     if loss_name == "AugmixKnowledgeDistill":
         return "KnowledgeDistill"
@@ -85,18 +106,23 @@ def loss_name(conf):
 
 def add_hydra(conf, df):
     """ Check whether this run was a fine-tuning run for hydra."""
-    path = conf.network.ckpt_path
+    path = conf.network.ckpt_path    
+    #print('entering add hydra')
     if path is None:
+        #print('exiting because path does not exist')
         return
    
     config_path = Path(path).parent.parent / "configs.yaml"
+    config_path=Path(str(config_path).replace("hoffmaja", "agnihotr-shashank-pruneshift/hoffmaja"))
 
-    if not config_path.exists():
+    if not config_path.exists():        
+        #print(config_path)
         return
 
     conf_ckpt = OmegaConf.load(config_path)
 
     if not "subnet" in conf_ckpt:
+        #print('exiting because subnet does not exist')
         return
     
     df["Prune Ratio"] = conf_ckpt.subnet.ratio
@@ -104,6 +130,7 @@ def add_hydra(conf, df):
     # df["Hydra Augmix"] = bool(conf_ckpt.datamodule.deepaugment_path)
     df["Hydra Amda"] = bool(conf_ckpt.datamodule.augmix) and bool(conf_ckpt.datamodule.deepaugment_path)
     df["Hydra Loss"] = loss_name(conf_ckpt)
+    #print('Adding everything')
 
 def add_supcon(conf, df):
     """ Check whether this run was a fine-tuning run for supcon."""
@@ -141,11 +168,11 @@ def build_df(path):
         df["Prune Method"] = prune_method(conf)
         amount = conf.prune.amount
         ratio = conf.prune.ratio
-        
-        if amount is None:
-            amount = 1 - 1 / ratio
-        if ratio is None:
-            ratio = 1 / (1 - amount)
+        if not amount is None and ratio is None:
+            if amount is None:
+                amount = 1 - 1 / ratio
+            if ratio is None:
+                ratio = 1 / (1 - amount)
         
         df["Prune Amount"] = amount
         df["Prune Ratio"] = ratio
@@ -157,6 +184,13 @@ def build_df(path):
     df["WeightDecay"] = conf.optimizer.weight_decay
     df["kd_T"] = conf.loss.kd_T
     df["kd_mixture"] = conf.loss.kd_mixture
+    
+    if conf.network.ensemble:
+        df["ensemble"] = conf.network.ensemble
+        df["network1"] = conf.network.network1_path
+        df["network2"] = conf.network.network2_path
+        df["network3"] = conf.network.network3_path
+    
 
         
     

@@ -1,0 +1,153 @@
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+mCE:  tensor(0.2686)
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/snow
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/shot_noise
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/scale
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/gaussian_noise
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/tilt
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/motion_blur
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/brightness
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/rotate
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/zoom_blur
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/translate
+error:  tensor(0.1225, device='cuda:0')
+mFR:  0.019965000000000056
+mECE:  tensor(0.0559)
+ece:  tensor(1.2768)
+err:  tensor(0.1093)
+mCE:  tensor(0.2698)
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/snow
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/shot_noise
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/scale
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/gaussian_noise
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/tilt
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/motion_blur
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/brightness
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/rotate
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/zoom_blur
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/translate
+error:  tensor(0.1187, device='cuda:0')
+mFR:  0.02056000000000004
+mECE:  tensor(0.0529)
+ece:  tensor(1.2973)
+err:  tensor(0.1049)
+mCE:  tensor(0.3310)
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/snow
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/shot_noise
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/scale
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/gaussian_noise
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/tilt
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/motion_blur
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/brightness
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/rotate
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/zoom_blur
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/translate
+error:  tensor(0.1531, device='cuda:0')
+mFR:  0.027293333333333374
+mECE:  tensor(0.0516)
+ece:  tensor(1.3964)
+err:  tensor(0.1371)
+mCE:  tensor(0.2965)
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/snow
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/shot_noise
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/scale
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/gaussian_noise
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/tilt
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/motion_blur
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/brightness
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/rotate
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/zoom_blur
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/translate
+error:  tensor(0.1363, device='cuda:0')
+mFR:  0.02355133333333336
+mECE:  tensor(0.0529)
+ece:  tensor(1.3531)
+err:  tensor(0.1226)
+mCE:  tensor(0.2586)
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/snow
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/shot_noise
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/scale
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/gaussian_noise
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/tilt
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/motion_blur
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/brightness
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/rotate
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/zoom_blur
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/translate
+error:  tensor(0.1169, device='cuda:0')
+mFR:  0.01902150000000003
+mECE:  tensor(0.0551)
+ece:  tensor(1.1472)
+err:  tensor(0.1043)
+mCE:  tensor(0.2540)
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/snow
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/shot_noise
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/scale
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/gaussian_noise
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/tilt
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/motion_blur
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/brightness
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/rotate
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/zoom_blur
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/translate
+error:  tensor(0.1145, device='cuda:0')
+mFR:  0.018350333333333392
+mECE:  tensor(0.0558)
+ece:  tensor(1.2039)
+err:  tensor(0.1031)
+mCE:  tensor(0.3867)
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/snow
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/shot_noise
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/scale
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/gaussian_noise
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/tilt
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/motion_blur
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/brightness
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/rotate
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/zoom_blur
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/translate
+error:  tensor(0.1909, device='cuda:0')
+mFR:  0.033398500000000046
+mECE:  tensor(0.0557)
+ece:  tensor(1.8342)
+err:  tensor(0.1708)
+multiheaded amda done

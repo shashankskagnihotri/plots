@@ -1,0 +1,12 @@
+,Amda,Augmix,DeepAugment,Epochs,ImageNet100 Error,ImageNet100-C Error,ImageNet100-R Error,LearningRate,Loss,Network,Path,Scaling,WeightDecay
+3,False,False,False,,3.8,25.9,25.6,,,full_swsl_resnet50,,,
+4,True,True,True,,4.7,40.3,15.0,,,full_resnet101_32x8d,,,
+1,False,True,False,,5.5,52.3,29.0,,,full_augmix_resnet50,,,
+0,False,False,False,,5.8,38.6,57.4,,,full_std_resnet50,,,
+2,True,True,True,,6.2,44.9,20.6,,,full_amda_resnet50,,,
+90,True,True,True,30.0,7.9200029373168945,20.137327909469597,46.210551261901855,0.1,StandardLoss,resnext101_32x8d,/work/dlclarge2/agnihotr-shashank-pruneshift/teachers/img100/amda_resnext101_32x8d,1.0,0.0002
+90,True,True,True,30.0,9.640002250671397,22.61733412742614,49.07526969909668,0.1,StandardLoss,wide_resnet50_2,/work/dlclarge2/agnihotr-shashank-pruneshift/teachers/img100/amda_wide_resnet50_2,1.0,0.0002
+90,True,True,True,30.0,10.100001096725464,24.28399920463562,50.11639893054962,0.1,StandardLoss,resnet50,/work/dlclarge2/agnihotr-shashank-pruneshift/teachers/img100/amda_resnet50,1.0,0.0002
+270,False,False,False,90.0,10.29999852180481,47.680002450942986,65.62984883785248,0.1,StandardLoss,resnet34,/work/dlclarge2/agnihotr-shashank-pruneshift/resnet34/standard,1.0,0.0002
+90,True,True,True,30.0,10.759997367858887,24.52693581581115,50.543197989463806,0.1,StandardLoss,resnet34,/work/dlclarge2/agnihotr-shashank-pruneshift/resnet34/amda,1.0,0.0002
+258,False,False,False,90.0,,,,0.1,StandardLoss,resnet34,/work/dlclarge2/agnihotr-shashank-pruneshift/resnet34/imagenet1000/standard,1.0,0.0002

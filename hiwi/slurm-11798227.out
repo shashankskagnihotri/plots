@@ -1,0 +1,18 @@
+mCE:  tensor(0.2639)
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/snow
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/shot_noise
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/scale
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/gaussian_noise
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/tilt
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/motion_blur
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/brightness
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/rotate
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/zoom_blur
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/translate
+error:  tensor(0.1268, device='cuda:0')
+mFR:  0.01767250000000003
+mECE:  tensor(0.0462)
+ece:  tensor(1.5279)
+err:  tensor(0.1137)
+calibrated seperate amda base done
+slurmstepd-dlcgpu39: error: *** JOB 11798227 ON dlcgpu39 CANCELLED AT 2022-01-03T19:55:19 ***

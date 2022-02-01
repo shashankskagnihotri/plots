@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/work/dlclarge1/agnihotr-ensemble/jupyter/hiwi/getting_csv6_3.py", line 33, in <module>
+    baseline=collect(baseline_path).query("Scaling == 1")
+  File "/work/dlclarge1/agnihotr-ensemble/jupyter/hiwi/utils.py", line 586, in collect
+    df = pd.concat(filter(lambda d: d is not None, [build_df(p) for p in exp_folders]), sort=True)
+  File "/work/dlclarge1/agnihotr-ensemble/env/mumbai/lib/python3.8/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/work/dlclarge1/agnihotr-ensemble/env/mumbai/lib/python3.8/site-packages/pandas/core/reshape/concat.py", line 294, in concat
+    op = _Concatenator(
+  File "/work/dlclarge1/agnihotr-ensemble/env/mumbai/lib/python3.8/site-packages/pandas/core/reshape/concat.py", line 351, in __init__
+    raise ValueError("No objects to concatenate")
+ValueError: No objects to concatenate

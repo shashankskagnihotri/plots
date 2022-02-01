@@ -1,0 +1,17 @@
+mCE:  tensor(0.2549)
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/snow
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/shot_noise
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/scale
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/gaussian_noise
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/tilt
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/motion_blur
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/brightness
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/rotate
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/zoom_blur
+/work/dlclarge1/agnihotr-ensemble/ImageNet-100-P/translate
+error:  tensor(0.1229, device='cuda:0')
+mFR:  0.016524000000000035
+mECE:  tensor(0.0444)
+ece:  tensor(1.5375)
+err:  tensor(0.1079)
+slurmstepd-dlcgpu25: error: *** JOB 11798223 ON dlcgpu25 CANCELLED AT 2022-01-03T19:55:19 ***
